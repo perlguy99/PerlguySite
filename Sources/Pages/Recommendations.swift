@@ -18,7 +18,7 @@ struct Recommendations: StaticPage {
     func body(context: PublishingContext) -> [BlockElement] {
         
         Group {
-            Text("Recommendations")
+            Text("Recommendations from LinkedIn")
                 .font(.title1)
                 .fontWeight(.black)
                 .margin(.top, .large)
@@ -34,7 +34,7 @@ struct Recommendations: StaticPage {
                         .margin(.top, 20)
                     }
                 }
-                .columns(4)
+                .columns(3)
             }
 
         }
