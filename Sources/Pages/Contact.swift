@@ -26,6 +26,7 @@ struct Contact: StaticPage {
                 List {
                     "LinkedIn: https://www.linkedin.com/in/brent-michalski"
                     "Email: Brent.Michalski@gmail.com"
+                    "https://apps.apple.com/us/app/my-shortcuts-for-xcode/id6499236630"
                 }
                 .listStyle(.custom("🤓 "))
             }
