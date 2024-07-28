@@ -16,9 +16,7 @@ imageDescription: My Shortcuts for Xcode App Icon
 
 - **Extensive Shortcuts Library:** Access a vast collection of keyboard shortcuts specifically designed for Xcode, categorized for easy reference.
 - **Customizable Shortcuts:** Personalize your workflow by customizing existing shortcuts or creating new ones to suit your development style.
-- **Quick Actions:** Utilize quick actions to perform common tasks with a single click, reducing the time spent on repetitive actions.
 - **User-Friendly Interface:** Intuitive and easy-to-navigate interface ensures that you can find and use shortcuts without any hassle.
-- **Search Functionality:** Quickly find the shortcut you need with the powerful search feature.
 - **Offline Access:** All shortcuts are available offline, so you can improve your productivity anytime, anywhere.
 
 ### Core Frameworks and Technologies:
@@ -38,4 +36,25 @@ imageDescription: My Shortcuts for Xcode App Icon
 - **Google AdMob SDK:** For monetization through ads, ensuring the app remains free for all users.
 
 By integrating these frameworks, APIs, and SDKs, **My Shortcuts for Xcode** delivers a robust, efficient, and user-friendly experience that enhances your coding efficiency and productivity. Download now and take your Xcode mastery to the next level!
+
+
+### Link to Apple App Store
+[![My Shortcuts For Xcode](/images/available-on.png)](https://apps.apple.com/us/app/my-shortcuts-for-xcode/id6499236630)
+
+---
+
+### Link to Github Repository:
+[![MyXcodeShortcuts Repo](/images/github-mark.svg)](https://github.com/perlguy99/MyXcodeShortcuts)
+
+---
+
+### App Screenshots
+
+[<img src="/images/projects/myshortcuts_01.png" style="width: 250px;height:auto;" />](/images/projects/myshortcuts_01.png)
+
+[<img src="/images/projects/myshortcuts_02.png" style="width: 250px;height:auto;" />](/images/projects/myshortcuts_02.png)
+
+[<img src="/images/projects/myshortcuts_03.png" style="width: 250px;height:auto;" />](/images/projects/myshortcuts_03.png)
+
+[<img src="/images/projects/myshortcuts_04.png" style="width: 250px;height:auto;" />](/images/projects/myshortcuts_04.png)
 

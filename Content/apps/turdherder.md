@@ -46,7 +46,7 @@ Turd Herder stands as a testament to creative development and the ability to int
 
 ---
 
-### Link to Guthub Repository:
+### Link to Github Repository:
 [![Turd Herder Repo](/images/github-mark.svg)](https://github.com/perlguy99/TurdHerder) Turd Herder Repo
 
 ---
