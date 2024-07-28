@@ -18,9 +18,9 @@ struct MyTheme: Theme {
                     Link("Examples", target: Examples())
                     Link("Services", target: Services())
                     Link("Recommendations", target: Recommendations())
-//                    Link("Help", target: Help())
+                    Link("GEOIntAppStore", target: GEOIntAppStore())
                 }
-                .background(.seaGreen)
+                .background(.steelBlue)
                 .navigationBarStyle(.dark)
                 .navigationItemAlignment(.trailing)
                 

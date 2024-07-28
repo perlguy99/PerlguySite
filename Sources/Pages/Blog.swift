@@ -25,6 +25,8 @@ struct Blog: StaticPage {
             
             Section {
                 for content in context.allContent {
+                    let foo = ContentPreview(for: content)
+                    
                     ContentPreview(for: content)
                         .margin(.top, 20)
                 }

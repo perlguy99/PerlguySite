@@ -24,7 +24,8 @@ struct ExampleSite: Site {
 
     var homePage = Home()
     var theme = MyTheme()
-    var pageWidth = 12
+    var pageWidth = 10
+    var tagPage = Tags()
     
     var pages: [any StaticPage] {
         Apps()
@@ -33,6 +34,7 @@ struct ExampleSite: Site {
         Examples()
 //        Help()
         Services()
+        GEOIntAppStore()
         Recommendations()
     }
     

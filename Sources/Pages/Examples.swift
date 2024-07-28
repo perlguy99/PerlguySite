@@ -12,8 +12,12 @@ struct Examples: StaticPage {
     var title = "Examples"
     
     func body(context: PublishingContext) -> [BlockElement] {
-        Text("Hello world!")
-            .font(.title1)
+        
+        Group {
+            Text("Hello world!")
+                .font(.title1)
+        }
+        
     }
 }
 
