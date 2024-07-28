@@ -14,43 +14,48 @@ struct Resumes: StaticPage {
     func body(context: PublishingContext) -> [BlockElement] {
         
         Section {
-            Group {}
+            Group {}.width(1)
+            Group {
+                Image("/images/resume_short_brent.pdf", description: "Brent Michalski's Short Resume")
+                    .resizable()
+            }
+            .shadow(radius: 5)
+            
+            Group {
+                Image("/images/resume_long_brent.pdf", description: "Brent Michalski's Long Resume")
+                    .resizable()
+            }
+            .shadow(radius: 5)
+            Group {}.width(1)
+        }
+        .padding(.top, .extraLarge)
+        .horizontalAlignment(.center)
+        
+        Section {
+            Group {}.width(1)
+            
             Group {
                 Text {
                     Link("Download Short Resume", target: "/images/resume_short_brent.pdf")
+                        .linkStyle(.button)
                 }
                 .horizontalAlignment(.center)
-                Image("/images/resume_short_brent.pdf", description: "Brent Michalski's Short Resume")
             }
-            .shadow(radius: 5)
-            
+            .padding(.top, .extraLarge)
+
             Group {
                 Text {
                     Link("Download Long Resume", target: "/images/resume_long_brent.pdf")
-                    Text(markdown: "*Only page 1 of long resume is shown here, download it to see the full resume.*")
+                        .linkStyle(.button)
+                    Text(markdown: "<sub>(Only page 1 of long resume is shown here, download it to see the full resume)</sub>")
+                        .horizontalAlignment(.center)
                 }
                 .horizontalAlignment(.center)
-                Image("/images/resume_long_brent.pdf", description: "Brent Michalski's Long Resume")
             }
-            .shadow(radius: 5)
-            
-            Group {}
+            .padding(.top, .extraLarge)
+
+
+            Group {}.width(1)
         }
-        
-        .padding(.top, .extraLarge)
-        
-        Section {
-            Group {}
-            Text("I'd love to talk about a job you need done!")
-            Group {}
-            Text {
-                Link("Download Long Resume", target: "/images/resume_long_brent.pdf")
-                Text(markdown: "*Only page 1 of long resume is shown here, download it to see the full resume.*")
-            }
-            .horizontalAlignment(.center)
-
-
-        }.shadow(radius: 5)
-        
     }
 }

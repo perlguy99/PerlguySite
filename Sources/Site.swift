@@ -17,14 +17,14 @@ struct IgniteWebsite {
 struct ExampleSite: Site {    
     var name = "Brent Danger Michalski"
     var titleSuffix = " – My Portfolio Site"
-    var url = URL(string: "https://www.example.com")!  // URL("https://www.example.com")
+    var url = URL(string: "https://www.perlguy.net")!
     var builtInIconsEnabled = true
 
     var author = "Brent D. Michalski"
 
     var homePage = Home()
     var theme = MyTheme()
-    var pageWidth = 10
+    var pageWidth = 8
     var tagPage = Tags()
     
     var pages: [any StaticPage] {
