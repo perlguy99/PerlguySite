@@ -60,38 +60,18 @@ struct Home: StaticPage {
         .frame(maxWidth: "60%")
         .margin(.bottom, .extraLarge)
         
-//        Section {
-//            Card(imageName: "/images/f35.png") {
-//                Text("F which is a 35")
-//                    .foregroundStyle(.white)
-//                    .fontWeight(.bold)
-//            }
-//            .contentPosition(.overlay)
-//            .imageOpacity(0.5)
-//            
-//            Card(imageName: "/images/meme_001.png") {
-//                Text("This is a meme")
-//                    .foregroundStyle(.aliceBlue)
-//                    .fontWeight(.bold)
-//
-//            }
-//            .contentPosition(.overlay)
-//            .imageOpacity(0.5)
-//            
-//            Card(imageName: "/images/brent_brick.png") {
-//                Text("This is Brent")
-//                    .foregroundStyle(.white)
-//                    .fontWeight(.bold)
-//
-//            }
-//            .contentPosition(.overlay)
-//            .imageOpacity(0.5)
-//        }
-//        .columns(3)
+        Text("Apps & Projects")
+            .font(.title1)
+            .fontWeight(.black)
+            .margin(.top, .large)
         
-        
-        
-
+        Section {
+            for content in context.content(ofType: "apps") {
+                ContentPreview(for: content)
+                    .width(2)
+                    .margin(.bottom)
+            }
+        }
     }
     
     let hireMeLink = Link("Hire Me", target: Contact())
@@ -118,25 +98,4 @@ struct Home: StaticPage {
     let articleSlide_07 = ArticleSlide(background: "/images/header_turdherder.png", slideTitle: "The Saga of Turd Herder", linkNameText: "View Article on Medium", linkTargetText: "https://medium.com/@DangerMichalski/the-saga-of-turd-herder-519799d2d4d1")
 
     
-}
-
-
-
-struct ArticleSlide {
-    let background: String
-    let slideTitle: String
-    let linkNameText: String
-    let linkTargetText: String
-    
-    func renderSlide() -> Slide {
-        return Slide(background: background) {
-            Text(slideTitle)
-                .font(.title1)
-            
-            Link(linkNameText, target: linkTargetText)
-                .linkStyle(.button)
-                .buttonSize(.large)
-                .role(.light)
-        }
-    }
 }

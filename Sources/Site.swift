@@ -36,6 +36,8 @@ struct ExampleSite: Site {
         Services()
         GEOIntAppStore()
         Recommendations()
+        AppTemplate()
+        Resumes()
     }
     
     var layouts: [any ContentPage] {

@@ -20,15 +20,19 @@ struct Apps: StaticPage {
                 .margin(.top, .large)
             
             Text("I'd love to talk about a job you need done!")
-            
+
             Text("Projects:")
                 .font(.title1)
-            List {
-                "One"
-                "Two"
-                "Three"
+                .padding(.top, .large)
+
+            Section {
+                for content in context.content(ofType: "apps") {
+                    ContentPreview(for: content)
+                        .width(2)
+                        .margin(.bottom)
+                }
             }
-            
+
             List {
                 "Address: 1805 Jessica Hills Court, Washington MO 63090"
                 "Phone: 636-373-1015"

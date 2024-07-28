@@ -14,11 +14,13 @@ struct MyTheme: Theme {
                     // Links
                     Link("Apps", target: Apps())
                     Link("Blog", target: Blog())
-                    Link("Contact", target: Contact())
-                    Link("Examples", target: Examples())
-                    Link("Services", target: Services())
+//                    Link("Contact", target: Contact())
+//                    Link("Examples", target: Examples())
+//                    Link("Services", target: Services())
+                    Link("Resumes", target: Resumes())
                     Link("Recommendations", target: Recommendations())
                     Link("GEOIntAppStore", target: GEOIntAppStore())
+                    Link("AppTemplate", target: AppTemplate())
                 }
                 .background(.steelBlue)
                 .navigationBarStyle(.dark)
