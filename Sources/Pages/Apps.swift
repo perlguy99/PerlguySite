@@ -21,7 +21,7 @@ struct Apps: StaticPage {
             
             Text("I'd love to talk about a job you need done!")
 
-            Text("Projects:")
+            Text("Apps:")
                 .font(.title1)
                 .padding(.top, .large)
 
@@ -32,21 +32,7 @@ struct Apps: StaticPage {
                         .margin(.bottom)
                 }
             }
-
-            List {
-                "Address: 1805 Jessica Hills Court, Washington MO 63090"
-                "Phone: 636-373-1015"
-                "Email: Brent.Michalski@gmail.com"
-            }
-            .listStyle(.custom("🤓 "))
-
-            Text("Washington Riverfront")
-                .font(.title2)
-            
-            Include("map.html")
-
         }
         .frame(width: "90%" )
-        
     }
 }

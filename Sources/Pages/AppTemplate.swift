@@ -17,7 +17,6 @@ struct AppTemplate: StaticPage {
             Image("/images/projects/geoint_icon.png", description: "GEOINT App Store Icon")
                 .resizable()
                 .width(1)
-//                .frame(maxWidth: "10%")
             
             Text("GEOINT App Store")
                 .background(.aquamarine)
@@ -39,17 +38,7 @@ struct AppTemplate: StaticPage {
             }
             .background(.green)
             .width(4)
-
-//            Card {
-//                Text("3nd embedded section")
-//            }
-//            .background(.blue)
-//            .width(4)
-
         }
-//        .columns(6)
-        
-        
     }
 }
 

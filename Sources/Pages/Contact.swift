@@ -13,28 +13,24 @@ struct Contact: StaticPage {
     
     func body(context: PublishingContext) -> [BlockElement] {
         
-        Group {
-            Text("Contact Me")
-                .font(.title1)
-                .fontWeight(.black)
-                .margin(.top, .large)
+        Card {
             
-            Text("I'd love to talk about a job you need done!")
-            
-            List {
-                "Address: 1805 Jessica Hills Court, Washington MO 63090"
-                "Phone: 636-373-1015"
-                "Email: Brent.Michalski@gmail.com"
+            Group {
+                Text("Contact Me")
+                    .font(.title1)
+                    .fontWeight(.black)
+                    .margin(.top, .large)
+                
+                Text("I love iOS development and I am always looking for fun, challenging and interesting projects!")
+                
+                List {
+                    "LinkedIn: https://www.linkedin.com/in/brent-michalski"
+                    "Email: Brent.Michalski@gmail.com"
+                }
+                .listStyle(.custom("🤓 "))
             }
-            .listStyle(.custom("🤓 "))
-
-            Text("Washington Riverfront")
-                .font(.title2)
-            
-            Include("map.html")
-
+            .frame(width: "90%" )
         }
-        .frame(width: "90%" )
         
     }
 }

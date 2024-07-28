@@ -53,25 +53,33 @@ struct Home: StaticPage {
 
             <br /><br />
             Thank you for visiting my portfolio. Let’s build something amazing together!
+            
+            ---
+            
             """)
                 .font(.lead)
+            
+            
+            Text("Apps & Projects")
+                .font(.title1)
+                .fontWeight(.black)
+                .margin(.top, .large)
+            
+            Section {
+                for content in context.content(ofType: "apps") {
+                    ContentPreview(for: content)
+//                        .width(2)
+                        .margin(.bottom)
+                }
+            }
+            
         }
         .horizontalAlignment(.leading)
         .frame(maxWidth: "60%")
         .margin(.bottom, .extraLarge)
         
-        Text("Apps & Projects")
-            .font(.title1)
-            .fontWeight(.black)
-            .margin(.top, .large)
+
         
-        Section {
-            for content in context.content(ofType: "apps") {
-                ContentPreview(for: content)
-                    .width(2)
-                    .margin(.bottom)
-            }
-        }
     }
     
     let hireMeLink = Link("Hire Me", target: Contact())
