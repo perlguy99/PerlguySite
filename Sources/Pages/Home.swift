@@ -68,10 +68,10 @@ struct Home: StaticPage {
             Section {
                 for content in context.content(ofType: "apps") {
                     ContentPreview(for: content)
-//                        .width(2)
                         .margin(.bottom)
                 }
             }
+            .columns(4)
             
         }
         .horizontalAlignment(.leading)

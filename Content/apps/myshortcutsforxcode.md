@@ -37,6 +37,7 @@ imageDescription: My Shortcuts for Xcode App Icon
 
 By integrating these frameworks, APIs, and SDKs, **My Shortcuts for Xcode** delivers a robust, efficient, and user-friendly experience that enhances your coding efficiency and productivity. Download now and take your Xcode mastery to the next level!
 
+---
 
 ### Link to Apple App Store
 [![My Shortcuts For Xcode](/images/available-on.png)](https://apps.apple.com/us/app/my-shortcuts-for-xcode/id6499236630)
