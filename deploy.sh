@@ -7,7 +7,7 @@ REMOTE_DIR="~/perlguy.net"
 LOCAL_DIR="./Build"
 
 # Ensure the known_hosts file exists and add the Dreamhost server to it
-#ssh-keyscan $HOST >> ~/.ssh/known_hosts
+ssh-keyscan $HOST >> ~/.ssh/known_hosts
 
 # Sync files using rsync
 rsync -avz --delete $LOCAL_DIR $USER@$HOST:$REMOTE_DIR
