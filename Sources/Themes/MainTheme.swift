@@ -9,6 +9,7 @@ struct MyTheme: Theme {
             Body {
                 let brandImage = Image("/images/header1b_100.png", description: "Brent D. Michalski")
                     .frame(width: 200)
+                    
                 
                 NavigationBar(logo: brandImage) {
                     // Links

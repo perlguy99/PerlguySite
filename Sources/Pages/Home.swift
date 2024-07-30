@@ -60,26 +60,26 @@ struct Home: StaticPage {
                 .font(.lead)
             
             
-            Text("Apps & Projects")
-                .font(.title1)
-                .fontWeight(.black)
-                .margin(.top, .large)
-            
-            Section {
-                for content in context.content(ofType: "apps") {
-                    ContentPreview(for: content)
-                        .margin(.bottom)
+            Group {
+                Text("Apps & Projects")
+                    .font(.title1)
+                    .fontWeight(.black)
+                    .margin(.top, .extraLarge)
+                
+                Section {
+                    for content in context.content(ofType: "apps") {
+                        ContentPreview(for: content)
+                            .padding("20px")
+                            .margin("20px")
+                    }
                 }
+                .columns(3)
             }
-            .columns(4)
+            .background(.snow)
             
         }
         .horizontalAlignment(.leading)
-        .frame(maxWidth: "60%")
         .margin(.bottom, .extraLarge)
-        
-
-        
     }
     
     let hireMeLink = Link("Hire Me", target: Contact())
