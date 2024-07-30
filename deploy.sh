@@ -4,7 +4,7 @@
 USER="perlguy9"
 HOST="iad1-shared-e1-02.dreamhost.com"
 REMOTE_DIR="~/perlguy.net"
-LOCAL_DIR="./Build"
+LOCAL_DIR="Build"
 
 # Ensure the known_hosts file exists and add the Dreamhost server to it
 ssh-keyscan $HOST >> ~/.ssh/known_hosts
