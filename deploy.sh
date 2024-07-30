@@ -9,3 +9,4 @@ LOCAL_DIR="/Users/brent/Development/IgniteWebSites/Ignite/PerlguySite/Build"
 # Sync files using rsync
 rsync -avz --delete $LOCAL_DIR $USER@$HOST:$REMOTE_DIR
 
+
