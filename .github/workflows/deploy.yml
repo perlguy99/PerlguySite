@@ -1,0 +1,23 @@
+name: Deploy to DreamHost
+
+on:
+  push:
+    branches:
+      - main  # Trigger the workflow on push to main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up SSH
+      uses: webfactory/ssh-agent@v0.5.3
+      with:
+        ssh-private-key: ${{ secrets.DREAMHOST_SSH_KEY }}
+
+    - name: Deploy to DreamHost
+      run: ./deploy.sh
+
