@@ -3,7 +3,7 @@
 # Define our variables
 USER="perlguy9"
 HOST="iad1-shared-e1-02.dreamhost.com"
-REMOTE_DIR="~/perlguy.net"
+REMOTE_DIR="~/IgniteSite"
 LOCAL_DIR="Build"
 
 # Ensure the known_hosts file exists and add the Dreamhost server to it
