@@ -8,19 +8,18 @@
 import Foundation
 import Ignite
 
-struct BlogPost: ContentPage {
-    func body(content: Content, context: PublishingContext) async -> [any BlockElement] {
-        
+struct BlogPost: ArticlePage {
+    var body: some HTML {
         Group {
-            Text(content.title)
+            Text(article.title)
                 .font(.title1)
                 .fontWeight(.black)
                 .margin(.top, .large)
-            
-            Text("\(content.estimatedWordCount) words; \(content.estimatedReadingMinutes) minutes to read.")
-            
-            content.body
+
+            Text("\(article.estimatedWordCount) words; \(article.estimatedReadingMinutes) minutes to read.")
+
+            article.text
         }
-        .frame(width: "90%")
+        .frame(width: .percent(90%))
     }
 }

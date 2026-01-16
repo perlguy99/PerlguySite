@@ -10,14 +10,14 @@ import Ignite
 
 struct Services: StaticPage {
     var title = "Services"
-    
-    func body(context: PublishingContext) -> [BlockElement] {
+
+    var body: some HTML {
         Group {
             Text("Services")
                 .font(.title1)
                 .fontWeight(.black)
                 .margin(.top, .large)
-            
+
             Table {
                 Row {
                     "Foo"
@@ -40,7 +40,6 @@ struct Services: StaticPage {
             }
             .tableStyle(.stripedRows)
         }
-        .frame(width: "90%")
+        .frame(width: .percent(90%))
     }
 }
-

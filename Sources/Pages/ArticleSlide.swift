@@ -8,6 +8,7 @@
 import Foundation
 import Ignite
 
+@MainActor
 struct ArticleSlide {
     let background: String
     let slideTitle: String

@@ -10,29 +10,30 @@ import Ignite
 
 struct Apps: StaticPage {
     var title = "Apps & Projects"
-    
-    func body(context: PublishingContext) -> [BlockElement] {
-        
+
+    @Environment(\.articles) var articles
+
+    var body: some HTML {
         Group {
             Text("Apps & Projects")
                 .font(.title1)
                 .fontWeight(.black)
                 .margin(.top, .large)
-            
+
             Text("I'd love to talk about a job you need done!")
 
             Text("Apps:")
                 .font(.title1)
                 .padding(.top, .large)
 
-            Section {
-                for content in context.content(ofType: "apps") {
-                    ContentPreview(for: content)
+            Grid {
+                for content in articles.typed("apps") {
+                    ArticlePreview(for: content)
                         .width(2)
                         .margin(.bottom)
                 }
             }
         }
-        .frame(width: "90%" )
+        .frame(width: .percent(90%))
     }
 }

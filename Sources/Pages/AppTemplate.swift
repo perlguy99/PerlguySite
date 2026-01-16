@@ -10,29 +10,28 @@ import Ignite
 
 struct AppTemplate: StaticPage {
     var title = "AppTemplate"
-    
-    func body(context: PublishingContext) -> [BlockElement] {
-        
+
+    var body: some HTML {
         Section {
             Image("/images/projects/geoint_icon.png", description: "GEOINT App Store Icon")
                 .resizable()
                 .width(1)
-            
+
             Text("GEOINT App Store")
                 .background(.aquamarine)
                 .font(.title1)
                 .horizontalAlignment(.leading)
                 .width(11)
         }
-        
+
         Section {
-        
+
             Card {
                 Text("1st embedded section")
             }
             .background(.red)
             .width(4)
-            
+
             Card {
                 Text("2nd embedded section")
             }
@@ -41,5 +40,3 @@ struct AppTemplate: StaticPage {
         }
     }
 }
-
-

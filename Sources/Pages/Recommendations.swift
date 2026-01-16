@@ -12,19 +12,20 @@ struct Recommendations: StaticPage {
         var name: String
         var text: String
     }
-    
+
     var title = "Recommendations"
-    
-    func body(context: PublishingContext) -> [BlockElement] {
-        
+
+    @Environment(\.decode) var decode
+
+    var body: some HTML {
         Group {
             Text("Recommendations from LinkedIn")
                 .font(.title1)
                 .fontWeight(.black)
                 .margin(.top, .large)
 
-            if let reviews = context.decode(resource: "reviews.json", as: [CustomerReview].self) {
-                Section {
+            if let reviews = decode("reviews.json", as: [CustomerReview].self) {
+                Grid {
                     for review in reviews {
                         Card {
                             review.text
@@ -38,7 +39,6 @@ struct Recommendations: StaticPage {
             }
 
         }
-        .frame(width: "90%")
-        
+        .frame(width: .percent(90%))
     }
 }

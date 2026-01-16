@@ -4,7 +4,7 @@ import Ignite
 @main
 struct IgniteWebsite {
     static func main() async {
-        let site = ExampleSite()
+        var site = ExampleSite()
 
         do {
             try await site.publish()
@@ -14,20 +14,22 @@ struct IgniteWebsite {
     }
 }
 
-struct ExampleSite: Site {    
+struct ExampleSite: Site {
     var name = "Brent Danger Michalski"
     var titleSuffix = " – My Portfolio Site"
     var url = URL(string: "https://www.perlguy.net")!
-    var builtInIconsEnabled = true
+    var builtInIconsEnabled: BootstrapOptions = .localBootstrap
 
     var author = "Brent D. Michalski"
 
     var homePage = Home()
-    var theme = MyTheme()
-    var pageWidth = 10
+    var layout = MainLayout()
     var tagPage = Tags()
-    
-    var pages: [any StaticPage] {
+
+    // Disable dark mode - use light theme only
+    var darkTheme: (any Theme)? = nil
+
+    @ElementBuilder<any StaticPage> var staticPages: [any StaticPage] {
         Apps()
         Blog()
         Contact()
@@ -38,10 +40,8 @@ struct ExampleSite: Site {
         AppTemplate()
         Resumes()
     }
-    
-    var layouts: [any ContentPage] {
+
+    @ElementBuilder<any ArticlePage> var articlePages: [any ArticlePage] {
         BlogPost()
     }
 }
-
-

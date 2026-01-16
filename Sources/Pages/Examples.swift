@@ -10,14 +10,11 @@ import Ignite
 
 struct Examples: StaticPage {
     var title = "Examples"
-    
-    func body(context: PublishingContext) -> [BlockElement] {
-        
+
+    var body: some HTML {
         Group {
             Text("Hello world!")
                 .font(.title1)
         }
-        
     }
 }
-

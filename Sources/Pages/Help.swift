@@ -10,14 +10,14 @@ import Ignite
 
 struct Help: StaticPage {
     var title = "Help"
-    
-    func body(context: PublishingContext) -> [BlockElement] {
+
+    var body: some HTML {
         Group {
             Text("Help")
                 .font(.title1)
                 .fontWeight(.black)
                 .margin(.top, .large)
-            
+
             Accordion {
                 Item("What type of development do you do?", startsOpen: true) {
                     Text(placeholderLength: 100)
@@ -37,7 +37,6 @@ struct Help: StaticPage {
             }
             .openMode(.all)
         }
-        .frame(width: "90%" )
+        .frame(width: .percent(90%))
     }
 }
-
