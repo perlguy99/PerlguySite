@@ -1,0 +1,56 @@
+/* Custom styles for Apps page */
+
+/* App card styling with hover effects */
+.app-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.app-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* App icon link styling */
+.app-icon-link {
+    width: 100px;
+    height: 100px;
+}
+
+.app-icon-link img {
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+/* App title link styling */
+.app-title-link {
+    color: #212529 !important;
+    font-weight: 600;
+}
+
+.app-title-link:hover {
+    color: #6f42c1 !important;
+}
+
+/* Card text colors */
+.app-card .card-text {
+    color: #6c757d;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .app-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Equal height cards in grid */
+.row > [class*="col"] {
+    display: flex;
+}
+
+.row > [class*="col"] .card {
+    width: 100%;
+}

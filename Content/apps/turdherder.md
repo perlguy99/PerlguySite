@@ -29,7 +29,7 @@ Turd Herder stands as a testament to creative development and the ability to int
 
  You can read about it here...
  
-[The Sage of Turd Herder](https://medium.com/@DangerMichalski/the-saga-of-turd-herder-519799d2d4d1)
+[The Saga of Turd Herder](https://medium.com/@DangerMichalski/the-saga-of-turd-herder-519799d2d4d1)
 
 ---
 

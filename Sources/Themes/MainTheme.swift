@@ -3,7 +3,9 @@ import Ignite
 
 struct MainLayout: Layout {
     var body: some Document {
-        Head()
+        Head {
+            MetaLink(href: "/css/custom.css", rel: .stylesheet)
+        }
 
         Body {
             NavigationBar(logo: Image("/images/header1b_100.png", description: "Brent D. Michalski").frame(width: 200)) {
