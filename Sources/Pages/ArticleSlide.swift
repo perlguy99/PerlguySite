@@ -14,16 +14,24 @@ struct ArticleSlide {
     let slideTitle: String
     let linkNameText: String
     let linkTargetText: String
-    
+
     func renderSlide() -> Slide {
         return Slide(background: background) {
             Text(slideTitle)
                 .font(.title1)
-            
+                .fontWeight(.bold)
+                .foregroundStyle(.white)
+                .margin(.bottom, .medium)
+
+            Text("Read my article on Medium")
+                .font(.lead)
+                .foregroundStyle(.white)
+                .margin(.bottom, .small)
+
             Link(linkNameText, target: linkTargetText)
                 .linkStyle(.button)
                 .buttonSize(.large)
-                .role(.light)
+                .role(.warning)
         }
     }
 }

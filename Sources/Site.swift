@@ -31,7 +31,6 @@ struct ExampleSite: Site {
 
     @ElementBuilder<any StaticPage> var staticPages: [any StaticPage] {
         Apps()
-        Blog()
         Contact()
         Examples()
         Services()
@@ -41,6 +40,7 @@ struct ExampleSite: Site {
         Resumes()
     }
 
+    // ArticlePage required to render markdown content (apps, etc.)
     @ElementBuilder<any ArticlePage> var articlePages: [any ArticlePage] {
         BlogPost()
     }

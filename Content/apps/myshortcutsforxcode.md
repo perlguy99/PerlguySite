@@ -10,52 +10,96 @@ imageDescription: My Shortcuts for Xcode App Icon
 
 # My Shortcuts for Xcode
 
-**My Shortcuts for Xcode** is your ultimate companion for Xcode productivity. This app empowers iOS developers to streamline their workflow by offering a comprehensive set of keyboard shortcuts and quick actions, enabling you to navigate Xcode with unparalleled efficiency. Whether you're a seasoned developer or just getting started, this app will help you master Xcode and boost your productivity.
-
-### Key Features:
-
-- **Extensive Shortcuts Library:** Access a vast collection of keyboard shortcuts specifically designed for Xcode, categorized for easy reference.
-- **Customizable Shortcuts:** Personalize your workflow by customizing existing shortcuts or creating new ones to suit your development style.
-- **User-Friendly Interface:** Intuitive and easy-to-navigate interface ensures that you can find and use shortcuts without any hassle.
-- **Offline Access:** All shortcuts are available offline, so you can improve your productivity anytime, anywhere.
-
-### Core Frameworks and Technologies:
-
-- **SwiftUI:** For creating the modern and responsive user interface.
-- **Combine:** For handling asynchronous events and data streams.
-- **UIKit:** To support legacy components and ensure smooth user experiences.
-- **Core Data:** For efficient data storage and management of user preferences.
-- **Swift Package Manager:** To integrate and manage third-party dependencies.
-- **StoreKit:** For in-app purchases and subscription management.
-
-### APIs and SDKs Used:
-
-- **Xcode SDK:** For seamless integration with Xcode and access to its functionalities.
-- **Apple Developer Tools:** Leveraging the latest tools and resources provided by Apple for iOS development.
-- **Firebase Analytics:** To gather insights into user behavior and app performance.
-- **Google AdMob SDK:** For monetization through ads, ensuring the app remains free for all users.
-
-By integrating these frameworks, APIs, and SDKs, **My Shortcuts for Xcode** delivers a robust, efficient, and user-friendly experience that enhances your coding efficiency and productivity. Download now and take your Xcode mastery to the next level!
+<img src="/images/projects/myshortcuts_icon.png" style="width: 250px;height:auto;">
 
 ---
 
-### Link to Apple App Store
+## Project Overview
+
+| | |
+|---|---|
+| **Role** | Creator & Solo Developer |
+| **Team Size** | 1 (personal project) |
+| **Platform** | iOS, iPadOS |
+| **Status** | Live on App Store |
+
+---
+
+## The Problem
+
+Every iOS developer knows Xcode has hundreds of keyboard shortcuts, but remembering them all is nearly impossible. Constantly stopping to look up shortcuts breaks flow and slows development. Existing solutions were either outdated or lacked the customization developers need.
+
+---
+
+## The Solution
+
+**My Shortcuts for Xcode** is your ultimate companion for Xcode productivity. The app provides:
+
+- **Extensive Shortcuts Library**: Comprehensive collection of Xcode keyboard shortcuts, categorized for easy reference
+- **Customizable Shortcuts**: Personalize your workflow with custom shortcuts that match your development style
+- **User-Friendly Interface**: Modern SwiftUI design for quick navigation
+- **Offline Access**: All shortcuts available without an internet connection
+
+---
+
+## Technical Highlights
+
+**Modern Architecture:**
+- Built with SwiftUI for a responsive, native interface
+- Combine framework for reactive data handling
+- Core Data for efficient storage and sync
+
+**Monetization Strategy:**
+- Free tier with essential shortcuts
+- StoreKit integration for premium features
+- AdMob SDK for sustainable free access
+
+---
+
+## Technologies Used
+
+| Category | Technologies |
+|---|---|
+| **Language** | Swift |
+| **UI Framework** | SwiftUI, UIKit |
+| **Data** | Core Data, Combine |
+| **Monetization** | StoreKit, Google AdMob |
+| **Analytics** | Firebase Analytics |
+
+---
+
+## GitHub Repository
+
+[![MyXcodeShortcuts Repo](/images/github-mark.svg)](https://github.com/perlguy99/MyXcodeShortcuts)
+
+[View Source on GitHub](https://github.com/perlguy99/MyXcodeShortcuts)
+
+---
+
+## Download
+
 [![My Shortcuts For Xcode](/images/available-on.png)](https://apps.apple.com/us/app/my-shortcuts-for-xcode/id6499236630)
 
 ---
 
-### Link to Github Repository:
-[![MyXcodeShortcuts Repo](/images/github-mark.svg)](https://github.com/perlguy99/MyXcodeShortcuts)
+## Screenshots
 
----
+<figure>
+<img src="/images/projects/myshortcuts_01.png" style="width: 250px;height:auto;" />
+<figcaption>Main shortcuts list with category navigation</figcaption>
+</figure>
 
-### App Screenshots
+<figure>
+<img src="/images/projects/myshortcuts_02.png" style="width: 250px;height:auto;" />
+<figcaption>Detailed shortcut view with key combinations</figcaption>
+</figure>
 
-[<img src="/images/projects/myshortcuts_01.png" style="width: 250px;height:auto;" />](/images/projects/myshortcuts_01.png)
+<figure>
+<img src="/images/projects/myshortcuts_03.png" style="width: 250px;height:auto;" />
+<figcaption>Category browser for quick access</figcaption>
+</figure>
 
-[<img src="/images/projects/myshortcuts_02.png" style="width: 250px;height:auto;" />](/images/projects/myshortcuts_02.png)
-
-[<img src="/images/projects/myshortcuts_03.png" style="width: 250px;height:auto;" />](/images/projects/myshortcuts_03.png)
-
-[<img src="/images/projects/myshortcuts_04.png" style="width: 250px;height:auto;" />](/images/projects/myshortcuts_04.png)
-
+<figure>
+<img src="/images/projects/myshortcuts_04.png" style="width: 250px;height:auto;" />
+<figcaption>Search functionality for finding specific shortcuts</figcaption>
+</figure>

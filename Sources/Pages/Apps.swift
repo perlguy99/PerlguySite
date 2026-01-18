@@ -12,7 +12,7 @@ struct Apps: StaticPage {
     var title = "Apps & Projects"
 
     var body: some HTML {
-        // Hero section with gradient background
+        // Hero section
         Section {
             Text("Apps & Projects")
                 .font(.title1)
@@ -22,7 +22,7 @@ struct Apps: StaticPage {
                 .font(.lead)
         }
         .padding(.vertical, .xLarge)
-        .background(Gradient.linearGradient(colors: .steelBlue, .darkSlateBlue, from: .topLeading, to: .bottomTrailing))
+        .background(.steelBlue)
         .foregroundStyle(Color.white)
         .horizontalAlignment(.center)
 
@@ -35,7 +35,8 @@ struct Apps: StaticPage {
                     title: "MemeCommander",
                     link: "/apps/memecommander",
                     description: "Reclaim your Photos app! MemeCommander helps you organize, tag, and manage your meme collection with lightning-fast search, custom categories, and full backup/restore capabilities. Built with SwiftUI for a native iOS experience.",
-                    tags: ["swift", "swiftui", "ios17", "storekit", "app store"]
+                    tags: ["swift", "swiftui", "ios17", "storekit", "app store"],
+                    featured: true
                 )
                 .width(4)
 
@@ -45,7 +46,8 @@ struct Apps: StaticPage {
                     title: "Edward Jones App",
                     link: "/apps/edwardjones",
                     description: "The Edward Jones app enables users to manage their financial goals on the go. Features include viewing account holdings, performance, and activity, connecting external accounts, tracking progress towards goals, and messaging with the Edward Jones team.",
-                    tags: ["swift", "xcode", "uikit", "combine", "async-await", "oauth"]
+                    tags: ["swift", "xcode", "uikit", "combine", "async-await", "oauth"],
+                    featured: true
                 )
                 .width(4)
                 
@@ -75,7 +77,8 @@ struct Apps: StaticPage {
                     title: "GEOINT App Store",
                     link: "/apps/geointappstore",
                     description: "The GEOINT App Store was truly a pioneering, and highly innovative project and solution for its time. Working on the GEOINT App Store represents a defining moment in my professional career.",
-                    tags: ["swift", "objective-c", "aws", "sql", "docker", "jenkins"]
+                    tags: ["swift", "objective-c", "aws", "sql", "docker", "jenkins"],
+                    featured: true
                 )
                 .width(4)
                 
@@ -130,9 +133,20 @@ struct Apps: StaticPage {
         title: String,
         link: String,
         description: String,
-        tags: [String]
+        tags: [String],
+        featured: Bool = false
     ) -> some HTML {
         Card {
+            // Featured badge if applicable
+            if featured {
+                Badge("Featured")
+                    .role(.warning)
+                    .class("position-absolute")
+                    .class("top-0")
+                    .class("end-0")
+                    .class("m-2")
+            }
+
             // App Icon - centered
             Link(target: link) {
                 Image(imagePath, description: title)
