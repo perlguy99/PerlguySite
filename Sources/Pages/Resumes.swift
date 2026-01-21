@@ -22,7 +22,11 @@ struct Resumes: StaticPage {
                 .margin(.bottom, .medium)
 
             Text(markdown: """
-            **Senior iOS Engineer** with 25+ years of software development experience and 14+ years focused on iOS. Proven track record delivering high-quality, mission-critical applications for Fortune 500 companies and government agencies.
+            **Senior iOS / Platform Engineer** with 20+ years of software experience and 15+ years specializing in iOS. Built
+            mission-critical mobile and platform systems for the U.S. Intelligence Community, DoD, fintech, and government
+            agencies—spanning zero-trust app ecosystems, real-time geospatial streaming, contract-driven networking, and
+            classified CI/CD pipelines. Known for modernizing legacy systems, hardening security and reliability, and
+            delivering measurable performance and operational gains in high-stakes environments.
             """)
                 .font(.lead)
                 .horizontalAlignment(.center)
@@ -152,7 +156,7 @@ struct Resumes: StaticPage {
             .margin(.bottom, .large)
 
             Group {
-                Link("Download Resume (PDF)", target: "/images/brent_michalski_01_2026.pdf")
+                Link("Download Resume (PDF)", target: "/images/brent_michalski_resume.pdf")
                     .linkStyle(.button)
                     .role(.primary)
 
