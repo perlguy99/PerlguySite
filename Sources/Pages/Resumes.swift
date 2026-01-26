@@ -156,7 +156,7 @@ struct Resumes: StaticPage {
             .margin(.bottom, .large)
 
             Group {
-                Link("Download Resume (PDF)", target: "/images/brent_michalski_resume.pdf")
+                Link("Download Resume (PDF)", target: "/images/bmichalski_resume_01222026.pdf")
                     .linkStyle(.button)
                     .role(.primary)
 
@@ -175,7 +175,7 @@ struct Resumes: StaticPage {
         Section {
             Group {}.width(1)
             Group {
-                Image("/images/brent_michalski_01_2026.pdf", description: "Brent Michalski's Resume")
+                Image("/images/bmichalski_resume_01222026.pdf", description: "Brent Michalski's Resume")
                     .resizable()
             }
             .shadow(radius: 5)
@@ -188,7 +188,7 @@ struct Resumes: StaticPage {
 
             Group {
                 Text {
-                    Link("Download Resume", target: "/images/brent_michalski_01_2026.pdf")
+                    Link("Download Resume", target: "/images/bmichalski_resume_01222026.pdf")
                         .linkStyle(.button)
                 }
                 .horizontalAlignment(.center)
